@@ -6,7 +6,6 @@ const userSchema = new mongoose.Schema(
     {
         pseudo: {
             type: String,
-            required: true,
             minlength: 3,
             maxlength: 30,
             unique: true, 
@@ -23,7 +22,7 @@ const userSchema = new mongoose.Schema(
         password: {
             type: String,
             required: true,
-            max: 1024,
+            max: 32,
             minlength: 6
         },
         avatar: {
