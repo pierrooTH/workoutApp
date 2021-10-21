@@ -2,22 +2,35 @@ const mongoose = require('mongoose');
 
 const workoutSchema = new mongoose.Schema(
     {
+        workoutId: {
+            type: String, 
+            required: true
+        },
         name: {
             type: String,
-            minlength: 3,
-            maxlength: 1024,
+            trim: true,
+            maxlength: 190,
+            required: true
         },
-        exercise: {
-            type: [String]
+        picture: {
+            type: String
+        },
+        exercises: {
+            type: [
+                {
+                    name: String,
+                    load: String
+                }
+            ],
+            required: true
         }, 
-        load: {
-            type: [Number]
-        },
         comment: {
             type: String
         },
         score: {
-            type: Number
+            type: Number,
+            min: 1, 
+            max: 5,
         }
     },
     {
