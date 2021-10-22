@@ -18,8 +18,8 @@ const workoutSchema = new mongoose.Schema(
         exercises: {
             type: [
                 {
-                    name: String,
-                    load: String
+                    name: [String],
+                    load: [String]
                 }
             ],
             required: true
