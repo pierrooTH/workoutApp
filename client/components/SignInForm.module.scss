@@ -1,0 +1,92 @@
+.base {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    background-color: #25737D;
+    width: 60%;
+    height: 80%;
+    border-radius: 10px;
+    display: flex;
+    
+    .imageContainer {
+        position: relative;
+        width: 50%;
+        height: 100%;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.3rem;
+    }
+
+
+    h1, h2 {
+        color: white;
+    }
+    .workoutTitle{
+        color: #FFC27A;
+    }
+
+    .login {
+        color: white;
+        background-color: #FFC27A;
+        border: 1px solid #FFC27A;
+        border-radius: 5px;
+        padding: 5px 10px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .login:hover {
+        color: #FFC27A;
+        background-color: white;
+        border: 1px solid white;
+    }
+
+    .linkRegister {
+        text-decoration: none;
+        color: #FFC27A;
+        border-radius: 5px;
+        border: 1px solid #ffff;
+        background-color: #fff;
+        padding: 5px 10px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .linkRegister:hover {
+        background-color: #FFC27A;
+        color: white;
+        border: 1px solid #FFC27A;
+    }
+
+    .contentForm {
+        width: 50%;
+        padding: 30px;
+
+        .formStyle {
+            text-align: center;
+            .loginLogo {
+                position: relative;
+                .icon {
+                    color: #FFC27A;
+                    position: absolute;
+                    left: 50px;
+                    top: 3px;
+                }
+            }
+
+        }
+        .centerElement {
+            display: grid;
+            align-items: center;
+        }
+    }
+
+    .inputLogin {
+        border: 1px solid #8C8A8A;
+        border-radius: 5px;
+        margin: 0 0px;
+        width: 80%;
+        padding: 5px;
+    }
+}
+
