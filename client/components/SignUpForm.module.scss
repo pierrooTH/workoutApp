@@ -15,7 +15,9 @@
         width: 50%;
         height: 100%;
     }
-
+    .imageContainer div {
+        border-radius: 0 10px 10px 0;
+    }
     .contentForm {
         width: 50%;
         padding: 30px;
