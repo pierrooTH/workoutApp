@@ -25,7 +25,7 @@ const SignInForm = () => {
       })
         .then((res) => {
           console.log(res);
-          window.location = "/app";
+          window.location = "/app/home";
         })
         .catch((err) => {
           console.log(err);
@@ -48,44 +48,46 @@ const SignInForm = () => {
         <h2>Se connecter</h2>
         <div className={styles.formStyle}>
           <form action="" method='POST' id="sign-up-form">
-            <label htmlFor="email">Email</label>
+            <label htmlFor="email"></label>
             <br />
             <div className={styles.loginLogo}>
-              <div className={styles.icon}>
-                <EmailIcon/>
+              <div className={styles.icon} >
+                <EmailIcon />
               </div>
-            <input
-              className={styles.inputLogin}
-              type="text"
-              name="email"
-              id="email"
-              onChange={(e) => setEmail(e.target.value)}
-              value={email}
-            />
+              <input
+                className={styles.inputLogin}
+                type="text"
+                name="email"
+                id="email"
+                onChange={(e) => setEmail(e.target.value)}
+                value={email}
+              />
             </div>
             <div className="email error"></div>
             <br />
-            <label htmlFor="password">Mot de passe</label>
+            <label htmlFor="password"></label>
             <br />
             <div className={styles.loginLogo}>
               <div className={styles.icon}>
-              <LockIcon />
+                <LockIcon />
               </div>
-            <input
-              className={styles.inputLogin}
-              type="password"
-              name="password"
-              id="password"
-              onChange={(e) => setPassword(e.target.value)}
-              value={password}
-            />
+              <input
+                className={styles.inputLogin}
+                type="password"
+                name="password"
+                id="password"
+                onChange={(e) => setPassword(e.target.value)}
+                value={password}
+              />
             </div>
             <div className="password error"></div>
             <br />
-            <button className={styles.login} onClick={handleLogin}>Se connecter</button>
-            <Link href="/register">
-              <button className={styles.linkRegister} >S'inscrire</button>
-            </Link>
+            <div className={styles.btn}>
+              <button className={styles.login} onClick={handleLogin}>Connexion</button>
+              <Link href="/register">
+                <button className={styles.linkRegister} >Inscription</button>
+              </Link>
+            </div>
           </form>
         </div>
       </div>
