@@ -4,7 +4,7 @@ import styles from '../styles/login.module.scss';
 
 const Register = () => {
     return (
-        <div className={styles.background}>
+        <div className={styles.base}>
             <SignUpForm/>
         </div>
     )
