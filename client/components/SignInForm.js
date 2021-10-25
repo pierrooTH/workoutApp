@@ -61,6 +61,7 @@ const SignInForm = () => {
                 id="email"
                 onChange={(e) => setEmail(e.target.value)}
                 value={email}
+                placeholder="email"
               />
             </div>
             <div className="email error"></div>
@@ -78,6 +79,7 @@ const SignInForm = () => {
                 id="password"
                 onChange={(e) => setPassword(e.target.value)}
                 value={password}
+                placeholder="mot de passe"
               />
             </div>
             <div className="password error"></div>

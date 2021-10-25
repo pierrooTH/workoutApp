@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
-import styles from './LoginForm.module.scss'
+import styles from './SignUpForm.module.scss'
 import axios from 'axios';
 import SignInForm from './SignInForm';
 
-const LoginForm = () => {
+const SignUpForm = () => {
     const [pseudo, setPseudo] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -88,4 +88,4 @@ const LoginForm = () => {
       );
 }
 
-export default LoginForm
+export default SignUpForm

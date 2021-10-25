@@ -1,11 +1,11 @@
 import React from 'react';
-import LoginForm from "../components/LoginForm";
+import SignUpForm from "../components/SignUpForm";
 import styles from '../styles/login.module.scss';
 
 const Register = () => {
     return (
         <div className={styles.background}>
-            <LoginForm/>
+            <SignUpForm/>
         </div>
     )
 }
