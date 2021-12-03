@@ -1,0 +1,29 @@
+.base {
+  background-color: #FFC27A;
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 500px;
+  box-shadow: 10px 10px 8px rgba(255, 194, 122, 0.25);
+
+  .nameWorkout {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .btnWorkoutCard {
+    margin: 30px 0 30px 0;
+    text-align: center;
+  }
+  .btn {
+    border: 1px solid #25737D;
+    padding: 15px 20px;
+    background-color: #25737D;
+    color: #e0e0e0;
+    border-radius: 3px;
+  }
+  .btn:hover {
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    color: #FFC27A;
+  }
+}
