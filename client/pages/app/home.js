@@ -1,10 +1,11 @@
 import React from 'react';
+import HomePage from "../../components/HomePage";
 
 
 const Home = () => {
 
     return (
-        <h1>Mes trois dernières séances</h1>
+        <HomePage />
     )
 
 }

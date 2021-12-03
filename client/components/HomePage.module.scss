@@ -1,0 +1,19 @@
+.base {
+    height: 100vh;
+
+    .baseRightContent {
+        position: absolute;
+        padding: 30px;
+        left: 350px;
+        width: calc(100% - 350px);
+        overflow: hidden;
+    }
+
+    .welcome {
+        font-size: 3rem;
+    }
+    .paragraphWorkout {
+        font-size: 1.5rem;
+        margin-top: 50px;
+    }
+}

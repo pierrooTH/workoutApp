@@ -1,0 +1,29 @@
+.base {
+    background-color: #25737D;
+    width: 350px;
+    height: 100%;
+    color: white;
+    position: fixed;
+    padding-top: 30px;
+
+    .avatar {
+        margin: 30px auto 0 auto;
+        position: relative;
+        width: 175px;
+        height: 175px;
+    }
+    .avatar div img {
+        border-radius: 50%;
+    }
+
+    .linksToOthersPages {
+        text-align: center;
+        margin-top: 125px;
+        font-size: 2.5rem;
+    }
+    .linkParagraph {
+        cursor: pointer;
+    }
+
+}
+
